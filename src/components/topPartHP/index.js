@@ -3,6 +3,7 @@ import classes from "./styles.module.scss";
 import first from './first.png';
 import second from './second.png';
 import third from './third.png'
+import { Link } from "react-router-dom";
 const TopPart = () => {
     return (
         <div className={classes.main}>
@@ -17,7 +18,7 @@ const TopPart = () => {
            <div className={classes.picthree}>
                 <img src={third} alt = 'third' />
            </div>
-           <button>Открыть каталог</button>
+           <button><Link to='/catalog'>  Открыть каталог</Link> </button>
            <div className={classes.red}>
             <div className={classes.smallred}></div>
            </div>
@@ -25,5 +26,7 @@ const TopPart = () => {
         </div>
     )
 }
+
+
 
 export default TopPart;

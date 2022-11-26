@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+a{
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+i{
+  position: absolute;
+  width: 100%;
+  height:100%;
+font-size: 20px;    
+}
+
+.homepage{ 
+  margin: 0 auto;
+  max-width: 1174px;
+  position: relative;
+  // width: 1174px;
+  height: 102px;
+  top: 30px;
+  min-width: 800px;
+
+}
+  .frame700{
+display: none;
+  
+}
+.img1{
+    
+  width: 98px;
+  height: 84px;
+  left: 131px;
+  top: 30px;
+    background: url(12.png);
+  }
+.frame{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 75px;
+
+position: absolute;
+width: 389px auto;
+height: 22px;
+left: 213px;
+top: 30px;
+}
+.frame :nth-child(1){
+  width: 89px;
+height: 22px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+
+color: #555252;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.l1{
+  position: absolute;
+ width: 85px;
+ height: 2px;
+ left: 213px;
+ top: 60px;
+ background-color: #847E7E;
+}
+.l2{
+ position: absolute;
+width: 100%;
+height: 2px;
+left: 0;
+ top: 100%   ;
+background-color: #847E7E;
+}
+.l3{
+  display: none;
+  position: absolute  ;
+  left: 95%;
+top: 30%;
+}
+.inp{
+  left: 65%;
+top: 20%;
+position: absolute;
+width: 270px;
+height: 40px;
+}
+.icon{
+  position: absolute  ;
+  left: 85%;
+top: 30%;
+
+}
+.iconn{
+  position: absolute  ;
+  left: 95%;
+top: 30%;
+}
+.inp1{
+  width: 100%;
+  height: 100%;   
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.2);
+border-radius: 15px;
+}
+.cart{
+  font-size: 20px;
+}
+@media (min-width: 768px) and (max-width: 1000px){
+  .homepage{
+    position: fixed;
+    width: 800px;
+    height: 102px;
+    top: 30px;
+    .icon{
+      left: 77%;
+    } 
+    .l1{
+      left: 15%;
+    }
+    .frame{
+      position: absolute;
+      width: 400px;
+      left: 15%;
+    }
+    .inp{
+      width: 168px;
+      left: 75%;
+    }
+    // .frame{
+    //   left: 15%;
+    // }
+    // .l1{
+    //   left: 15%;
+    // }
+  }
+}
+@media (min-width: 480px) and (max-width: 768px){
+  .frame{
+    display: none;
+  }
+  .inp{
+  width: 359px;
+  left: 20%;
+}
+.icon{
+left: 21.5%;
+}
+.iconn{
+  left: 85%;  
+}
+  .homepage{
+    position: absolute;
+width: 738px;
+height: 102px;
+left: 15px;
+top: 18px;
+.l1{
+  display: none;
+}
+.l3{
+  display: block;
+  left: 90%;
+  width: 50px;
+  
+}
+
+  }
+
+  .frame700{
+    position: absolute;
+    display: block;
+    z-index: 100;
+    background: rgba(128, 128, 128, 0.688);
+    width: 30%;
+    height: 100vh;
+    font-size: 20px;
+    top: -20px;
+    transform: translateX(-100%);
+    transition: transform 0.5s; 
+    
+      li{
+        position: relative;
+        top: 8%;
+        margin: 25px;
+        
+      }
+
+  
+}
+.frame700.active{
+  transform: translateX(0);
+}
+}

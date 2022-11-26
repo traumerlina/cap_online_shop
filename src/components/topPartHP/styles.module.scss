@@ -1,12 +1,13 @@
 
 .main {
     position: absolute;
-    width: 100%;
+    width:100pc;
     height: 460px;
     left: 0px;
     top: 176px;
     background: linear-gradient(90.87deg, #F8F7F7 0.69%, rgba(227, 227, 227, 0.56) 98.66%);
     z-index: 0;
+    
 
     .title {
         position: absolute;
@@ -102,4 +103,3 @@
         z-index: 5;
     }
 }
-
