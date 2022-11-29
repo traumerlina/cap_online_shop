@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Footer from '../components/footer';
 
 const SearchPage = () => {
   return (
-    <div>SearchPage</div>
+    <div>
+      <Footer/>
+    </div>
   )
 }
 

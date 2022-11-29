@@ -4,6 +4,8 @@ import first from "./images/first.png"
 import second from "./images/second.png"
 import thirt from "./images/thirt.png"
 import MainImg from "./images/MainImg.png"
+import { Link } from "react-router-dom";
+
 
 const MainPart = () => {
   return (
@@ -47,9 +49,8 @@ const MainPart = () => {
           <p>Supreme & new era <span className={classes.span}>collabaration</span></p>
         </div>
 
-        <div className={classes.btn}>
-          <p className={classes.btn_text}>Открыть каталог</p>
-        </div>
+          <button ><Link to='/catalog'>  Открыть каталог</Link> </button>
+
       </div>
 
       <div>

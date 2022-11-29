@@ -41,12 +41,11 @@ display: none;
     background: url(12.png);
   }
 .frame{
-  display: flex;
+display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
 gap: 75px;
-
 position: absolute;
 width: 389px auto;
 height: 22px;
@@ -75,14 +74,7 @@ flex: none;
 order: 0;
 flex-grow: 0;
 }
-.l1{
-  position: absolute;
- width: 85px;
- height: 2px;
- left: 213px;
- top: 60px;
- background-color: #847E7E;
-}
+
 .l2{
  position: absolute;
 width: 100%;
