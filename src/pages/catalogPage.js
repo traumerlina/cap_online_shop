@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Footer from '../components/footer';
+import TopPartKP from '../components/topPartKP';
 
 const CatalogPage = () => {
   return (
-    <div>CatalogPage</div>
+    <div>
+      <TopPartKP/>
+      <Footer/>
+    </div>
+
   )
 }
 

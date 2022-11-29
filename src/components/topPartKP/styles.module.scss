@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.ToHome{
+    position: absolute;
+    width: 190px;
+    height: 18px;
+    left: 11.7%;
+    top: 162px;
+    display: flex;
+    .cat{
+color: #FDDB16;
+    }
+
+    .iconn{
+        font-size: 11px;
+        color:  #555252;
+        margin: 5px;
+        margin-top: 3.3%;
+        
+    }
+}    
+.buner{
+    margin: auto;
+    max-width: 1440px;
+    position: absolute;
+    width: 1440px;
+    height: 461px;
+    left: 0px;
+    top: 210px;
+    background: url(./3.png);
+.Muck{
+    margin: 10%;
+    width: 586px;
+    height: 176px;
+
+ }
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+
+    color: #FFFEFA;
+}
+}

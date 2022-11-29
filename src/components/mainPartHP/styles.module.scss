@@ -8,7 +8,7 @@
 }
 
 .col {
-    position: absolute;
+    position: absolute; 
     width: 20%;
     height: 25%;
     padding: 1%;
@@ -108,18 +108,18 @@
 
 .MainImg {
     position: absolute;
-    width: 951.25px;
+    width: 900.25px;
     height: 445.9px;
     left: 37%;
-    top: 180px;
+    top: 150px;
 }
 
 .NewEra {
     position: absolute;
     width: 511px;
     height: 78px;
-    left: 40%;
-    top: 170px;
+    left: 35%;
+    top: 140px;
 
     font-style: normal;
     font-weight: 900;
@@ -138,27 +138,17 @@
     text-transform: lowercase;
 }
 
-.btn {
+button {
     position: absolute;
     width: 230px;
     height: 60px;
-    left: 40%;
-    top: 280px;
-
-    background: #670098;
+    left: 35%;
+    top: 260px;
+    border: 1px ;
+    background: #a10ce6;
     border-radius: 20px;
 }
 
-.btn_text {
-    position: absolute;
-    top: 18px;
-    left: 40px;
 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
 
 // THE END 
