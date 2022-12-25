@@ -1,11 +1,13 @@
-import React from 'react'
+
+import React from 'react';
+import Details from '../components/productMap';
 
 const DetailsPage = () => {
   return (
     <div>
-      hi
+      <Details/>
     </div>
   )
 }
-
 export default DetailsPage;
+
