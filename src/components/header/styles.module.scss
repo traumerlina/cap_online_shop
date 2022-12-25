@@ -17,6 +17,21 @@ i{
   height:100%;
 font-size: 20px;    
 }
+form {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  input {
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    height: 38px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+
+  }
 
 .homepage{ 
   margin: 0 auto;
@@ -90,7 +105,7 @@ background-color: #847E7E;
 top: 30%;
 }
 .inp{
-  left: 65%;
+left: 65%;
 top: 20%;
 position: absolute;
 width: 270px;

@@ -23,11 +23,11 @@ const Header = () => {
                 </ul>
                 <ul className={classes.line}>
                   <li className={classes.inp}><input type="text" className={classes.inp1} />
-                  </li><li className={classes.icon}><a href><FontAwesomeIcon className={classes.cart} icon={faMagnifyingGlass} /> </a></li>
+                  </li><li className={classes.icon}><a href= " "><FontAwesomeIcon className={classes.cart} icon={faMagnifyingGlass} /> </a></li>
                   <li className={classes.l1}>
                   </li><li className={classes.iconn}><a href= "/cart" ><FontAwesomeIcon className={classes.cart} icon={faBasketShopping} /> </a></li>
                   <li className={classes.l2} />
-                  <li className={classes.l3} id='l3'><a><FontAwesomeIcon className={classes.cart} icon={faBars} /></a></li>
+                  <li className={classes.l3} id='l3'><a href= " "><FontAwesomeIcon className={classes.cart} icon={faBars} /></a></li>
                 </ul>
 
                 <ul className={classes.frame700} id='frame700'>

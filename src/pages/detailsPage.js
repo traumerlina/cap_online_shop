@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Details from '../components/productMap';
 
@@ -8,5 +9,5 @@ const DetailsPage = () => {
     </div>
   )
 }
-
 export default DetailsPage;
+
