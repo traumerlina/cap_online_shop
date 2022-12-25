@@ -1,0 +1,153 @@
+.topSelers{
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #000000;
+}
+
+.mainContainer{
+    top: 450px;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+// //КОНЕЦ КОНТЕЙНЕРА
+
+.mainContainer{
+    max-width: 1224px;
+    margin: 0 auto;
+
+
+}
+.main__head{
+    max-width: 904px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main {
+        top: 958px;
+        width: 218px;
+        height: 144px;
+        left: 258px;
+    }
+.main2 {
+    width: 218px;
+    height: 144px;
+    left: 601px;
+}
+.main3 {
+    width: 218px;
+    height: 144px;
+    left: 944px;
+}
+
+
+.firstImage{
+    width: 100%;
+    height: 200px;
+}
+
+
+.container{
+    top: 950px;
+    width: 250px;
+    height: 100px;
+}
+
+.adidas{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 5px;
+
+    color: #847E7E;
+
+
+}
+
+.textProperties{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 5px;
+    letter-spacing: -0.05em;
+
+    color: #847E7E;
+
+}
+
+.summ{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FDDB16;
+
+}
+
+.page_conteiner{
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(197, 136, 136),rgb(150, 74, 140),rgb(106, 60, 60));
+}
+
+.content{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .slide_panel{
+        display: flex;
+        align-items: center;
+        width: 40em;
+        height: 30em;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .prev, .next {
+        width: 2em;
+        height: 2em;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.25s;
+    }
+
+    .prev:hover, .next:hover {
+    transform: scale(1.25);
+    }
+    .prev {background-image: url('./images/9375838928926.png');}
+    .next {background-image: url('./images/60179430_9FIFTY_950NECECOMQ29051SAFGIACHW_SAFGIA_WHI_3QL.png');}
+
+
+    img {
+        scroll-snap-align: start;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
