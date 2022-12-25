@@ -9,7 +9,7 @@ const TopPartKP = () => {
     <div className={classes.conteyner}>
     <nav className={classes.ToHome}>
       <li ><Link to="/" > Главная  </Link></li>
-      <li className={classes.iconn}><a href><FontAwesomeIcon className={classes.cart} icon={faChevronRight} /> </a></li>
+      <li className={classes.iconn}><a href=" "><FontAwesomeIcon className={classes.cart} icon={faChevronRight} /> </a></li>
       <li className={classes.cat}>Kаталог</li>
     </nav>
     
