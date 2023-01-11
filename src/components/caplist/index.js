@@ -8,13 +8,11 @@ import AllCaps from '../all-caps';
 const Caplist = ({caps}) => {
   
     return (
-      <ul className={classes.cap_list}>
-  
+      <div className={classes.cap_list}>
         {caps.map((cap) => {
-            return <li key = {`caps-${cap.id}}`}> 
-            <AllCaps cap={cap} /> </li>
+            return <AllCaps cap={cap}/>
         })}
-      </ul> 
+      </div> 
     )
   };
   

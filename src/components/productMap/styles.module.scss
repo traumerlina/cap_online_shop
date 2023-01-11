@@ -7,10 +7,9 @@
     left: 11.7%;
     top: 162px;
     display: flex;
-    font-size: 16px;
 
 .iconn {
-    font-size: 12px;
+    font-size: 11px;
     color:  #555252;
     margin: 5px;
     margin-top: 3.3%;   
@@ -18,16 +17,7 @@
 
 .cat {
     color: #FDDB16;
-    position: absolute;
-    width: 190px;
-    height: 18px;
-    left: 135px;
-    top: 5px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 17px;
+    white-space: nowrap;
  }
 }  
 
@@ -259,6 +249,7 @@
 }
 
 .text5 {
+    background-color:#ffffff;
     position: absolute;
     width: 10px;
     height: 29px;
@@ -289,6 +280,7 @@
 
 .text7 {
     position: absolute;
+    background-color:#ffffff;
     width: 14px;
     height: 29px;
     left: 870px;
@@ -315,22 +307,15 @@
     color: #FDDB16;
 }
 
-.rectangle {
-    position: absolute;
-    width: 270px;
-    height: 70px;
+.text9 
+{
     left: 1080px;
     top: 737px;
     background: #FDDB16;
     border-radius: 15px;
-}
-
-.text9 {
     position: absolute;
-    width: 191px;
-    height: 22px;
-    left: 1120px;
-    top: 761px;
+    width: 270px;
+    height: 70px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;

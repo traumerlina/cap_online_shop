@@ -1,21 +1,22 @@
 import React from 'react';
 import classes from "./styles.module.scss";
+import { Link } from 'react-router-dom';
 
 const AllCaps = ({cap}) => {
-    const {description, name, price, image} = cap;
+    const {id, description, name, price, image} = cap;
   return (
-    <div className={classes.cap_list_item}>
-        <div className={classes.cap_list_item_cover}>
-            <img src= {image} alt='cover'/>
+    <Link to={'/details/'+ id}>
+        <div className={classes.cap_list_item}>
+            <div style={{backgroundImage: `url(${image})`}} className={classes.cap_list_item_img}></div>
+            <div className={classes.cap_list_item_desc}>
+                <div>
+                    <h2>{name}</h2>
+                    <p>{description}</p>
+                </div>
+                <p>{price}c</p>
+            </div>  
         </div>
-
-        <div className={classes.cap_list_item_details}>
-
-            <div className={classes.cap_list_item_description}>{description}</div>
-            <div className={classes.cap_list_item_name}> {name} </div>
-            <div className={classes.cap_list_item_price}> {price} </div>
-        </div>
-    </div>
+    </Link>
   )
 }
 

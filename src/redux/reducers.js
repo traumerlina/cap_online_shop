@@ -1,5 +1,6 @@
 import { FETCH_CAPS_FAILURE, FETCH_CAPS_REQUEST, FETCH_CAPS_FINALLY, FETCH_CAPS_SUCCESS} from "./types";
 
+
 const initialState = {
     caps: [],
     loading: true,
