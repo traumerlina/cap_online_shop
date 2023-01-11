@@ -1,5 +1,5 @@
-import { } from "./actions";
+import { fetchCaps } from "./actions";
 
 import store from "./store";
 
-export { store };
+export { store, fetchCaps };
