@@ -16,6 +16,7 @@ const HomePage = () => {
 
         <MainPart/>
         <BottomPartHP/>
+        
         <Footer/>
  
     </div>
