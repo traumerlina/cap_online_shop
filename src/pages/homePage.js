@@ -9,15 +9,15 @@ import TopSlider from '../components/topSlider';
 const HomePage = () => {
   return (
     <div>
-      <TopPart/>
-      <TopSlider/>
-      {/* <ScrollCheck/> */}
+      {/* <TopPart/>
+      <TopSlider/> */}
+      <ScrollCheck/>
 
 
-        <MainPart/>
+        {/* <MainPart/>
         <BottomPartHP/>
-        <Footer/>
- 
+        <Footer/> */}
+
     </div>
   )
 }
