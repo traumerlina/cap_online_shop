@@ -1,3 +1,4 @@
+
 const capsRequested = () => {
     return {
         type: "FETCH_CAPS_REQUEST"
@@ -33,4 +34,12 @@ const fetchCaps = (dispatch, service) => {
     .finally(() => dispatch(capsFinally()))
 }
 
-export {fetchCaps};
+const fetchCap = (dispatch, service) => {
+    dispatch(capsRequested());
+    service()
+    .then((data) => dispatch(capsLoaded(data)))
+    .catch((err) => dispatch(capsError(err)))
+    .finally(() => dispatch(capsFinally()))
+}
+
+export {fetchCaps, fetchCap};
