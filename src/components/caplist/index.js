@@ -10,7 +10,7 @@ const Caplist = ({caps}) => {
     return (
       <div className={classes.cap_list}>
         {caps.map((cap) => {
-            return <AllCaps cap={cap}/>
+            return <AllCaps cap={cap} key={cap.id}/>
         })}
       </div> 
     )
@@ -21,7 +21,7 @@ const service = useContext(CapsContext);
 
 useEffect(() => {
     fetchCaps(service.getCaps)
-}, [fetchCaps, service.getCaps]);
+}, [fetchCaps, service]);
 
 // if(loading) {
 //     return <Spinner/>

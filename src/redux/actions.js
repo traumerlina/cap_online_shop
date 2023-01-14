@@ -34,9 +34,9 @@ const fetchCaps = (dispatch, service) => {
     .finally(() => dispatch(capsFinally()))
 }
 
-const fetchCap = (dispatch, service) => {
+const fetchCap = (dispatch, service,id) => {
     dispatch(capsRequested());
-    service()
+    service(id)
     .then((data) => dispatch(capsLoaded(data)))
     .catch((err) => dispatch(capsError(err)))
     .finally(() => dispatch(capsFinally()))
