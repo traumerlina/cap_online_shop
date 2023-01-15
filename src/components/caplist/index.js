@@ -24,6 +24,7 @@ const Caplist = ({ caps }) => {
 const CapListContainer = ({ caps, loading, error, fetchCaps }) => {
   const service = useContext(CapsContext);
 
+
   useEffect(() => {
     fetchCaps(service.getCaps);
   }, [fetchCaps, service.getCaps]);

@@ -1,3 +1,4 @@
+
 const capsRequested = () => {
   return {
     type: "FETCH_CAPS_REQUEST",
@@ -32,4 +33,6 @@ const fetchCaps = (dispatch, service) => {
     .finally(() => dispatch(capsFinally()));
 };
 
+
 export { fetchCaps };
+
