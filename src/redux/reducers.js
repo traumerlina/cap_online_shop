@@ -5,13 +5,13 @@ const initialState = {
     caps: [],
     loading: true,
     error: false,
-
 };
 
 
 
 const reducer = (state = initialState, action) => {
-    switch (action.type) {
+    switch (action.type) 
+    {
         case FETCH_CAPS_SUCCESS:
             return {
                 ...state,

@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import CapsContext from '../context';
-import { fetchCaps } from '../../redux';
+import { fetchCap } from '../../redux';
 import Spinner from 'react-bootstrap/Spinner';
 import first from './first.png';
 import second from './second.png';
@@ -15,9 +15,16 @@ import fourth from './fourth.png';
 const ProductMap = (cap) => 
 {
     const [counter, setCounter] = useState(1);
-    let {id} = useParams();
-    id = parseInt(id);
-    var cap1 = cap.cap.find((el) => el.id === id);
+    let cap1 = cap.cap;
+    let sizeDict = 
+    {
+        3: "S",
+        4: "M",
+        5: "L",
+        6: "XL"
+    }
+    const [size, setSize] = useState(cap1.size[0]);
+    
     function plusCount()
     {
         setCounter(count => count + 1);    
@@ -31,6 +38,12 @@ const ProductMap = (cap) =>
             setCounter(0);
         }  
     }
+
+    function setSizeButton(size)
+    {
+        setSize(size);
+    }
+
     if(cap1 != null){
     return (
         <div className={classes.conteyner}>
@@ -41,7 +54,6 @@ const ProductMap = (cap) =>
              <li className={classes.iconn}><FontAwesomeIcon className={classes.cart} icon={faChevronRight} /></li>
              <li className={classes.cat}> Детали продукта </li>
           </nav>
-        <p>{cap1.id}</p>
         <div className={classes.frameone}></div>
         <div className={classes.picone}>
                 <img src={cap1.image} alt = 'first' width='483px' height='322px;'/>
@@ -63,15 +75,12 @@ const ProductMap = (cap) =>
             <h5 className={classes.title}>{cap1.name}</h5>
             <p className={classes.text}>{cap1.description}</p>
         </div> 
-
-        <div className={classes.frame1}></div>
-            <p className={classes.text1}> S </p>
-        <div className={classes.frame2}></div>
-            <p className={classes.text2}> M </p>
-        <div className={classes.frame3}></div>
-            <p className={classes.text3}> L </p>
-        <div className={classes.frame4}></div>
-            <p className={classes.text4}> XL </p>
+        <div className={classes.sizes}>
+        {cap1.size.map(function(elem)
+        {
+            return <button onClick={() => setSizeButton(elem)} key={elem} className={classes.sizes_block + " " + (size === elem ? classes.selected : '')}>{sizeDict[elem]}</button>;
+        })}
+        </div>
         <div className={classes.frame5}></div>
             <button onClick={minusCount} className={classes.text5}> - </button>
             <p className={classes.text6}> {counter} </p>
@@ -84,12 +93,14 @@ const ProductMap = (cap) =>
         return(<p>Ошибка</p>)
     }
 };
-const CapListContainer = ({caps, loading, error, fetchCaps}) => {
+const CurrentCapContainer = ({caps, loading, error, fetchCap}) => {
 const service = useContext(CapsContext);
-
-useEffect(() => {
-    fetchCaps(service.getCaps)
-}, [fetchCaps, service.getCaps]);
+let {id} = useParams();
+id = parseInt(id);
+useEffect(() => 
+{
+    fetchCap(service.getCap,id)
+}, [service.getCap]);
 
  if(loading) {
       return <Spinner animation="border" />;
@@ -110,11 +121,12 @@ return <ProductMap cap={caps} />
       };
   };
   
-  const mapDispatchToProps = (dispatch) => {
+  const mapDispatchToProps = (dispatch,id) => 
+  {
     return{
-      fetchCaps: (service) => fetchCaps(dispatch, service)
+      fetchCap: (service,id) => fetchCap(dispatch, service,id)
     }
   };
   
   
-export default connect(mapStateToProps, mapDispatchToProps) (CapListContainer);
+export default connect(mapStateToProps, mapDispatchToProps) (CurrentCapContainer);
