@@ -27,7 +27,7 @@ const sortName = sortirovka[value];
                     sortirovka.map((name, i) => (
                         <li key={i} 
                         onClick={()=> onClickSortirovkaItem(i)} 
-                        className={value == i ? 'active' : ''}>{name}</li>
+                        className={value === i ? 'active' : ''}>{name}</li>
                     ))
                 }
             </ul>
