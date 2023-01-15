@@ -1,45 +1,38 @@
 
 const capsRequested = () => {
-    return {
-        type: "FETCH_CAPS_REQUEST"
-    }
-}
-
-const capsLoaded = (newCaps) => {
-    return {
-        type: "FETCH_CAPS_SUCCESS",
-        payload: newCaps,
-    };
+  return {
+    type: "FETCH_CAPS_REQUEST",
+  };
 };
 
-const capsError =(error) => {
-    return {
-        type: "FETCH_CAPS_FAILURE",
-        payload: error,
-    };
-}
+const capsLoaded = (newCaps) => {
+  return {
+    type: "FETCH_CAPS_SUCCESS",
+    payload: newCaps,
+  };
+};
 
-const capsFinally =() => {
-    return{
-        type: "FETCH_CAPS_FINALLY"
-    }
-}
+const capsError = (error) => {
+  return {
+    type: "FETCH_CAPS_FAILURE",
+    payload: error,
+  };
+};
 
+const capsFinally = () => {
+  return {
+    type: "FETCH_CAPS_FINALLY",
+  };
+};
 
 const fetchCaps = (dispatch, service) => {
-    dispatch(capsRequested());
-    service()
+  dispatch(capsRequested());
+  service()
     .then((data) => dispatch(capsLoaded(data)))
-    .catch((err) => dispatch(capsError(err)))
-    .finally(() => dispatch(capsFinally()))
-}
+    .catch((err) => dispatch(capsError(err.message)))
+    .finally(() => dispatch(capsFinally()));
+};
 
-const fetchCap = (dispatch, service,id) => {
-    dispatch(capsRequested());
-    service(id)
-    .then((data) => dispatch(capsLoaded(data)))
-    .catch((err) => dispatch(capsError(err)))
-    .finally(() => dispatch(capsFinally()))
-}
 
-export {fetchCaps, fetchCap};
+export { fetchCaps };
+

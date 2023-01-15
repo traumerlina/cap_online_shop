@@ -13,10 +13,9 @@ const HomePage = () => {
       <TopSlider/>
       {/* <ScrollCheck/> */}
 
-
         <MainPart/>
         <BottomPartHP/>
-        
+
         <Footer/>
  
     </div>
