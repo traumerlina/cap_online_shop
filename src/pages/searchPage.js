@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Footer from '../components/footer';
+import Caplist from '../components/caplist';
+
+
+
 
 const SearchPage = () => {
+
   return (
-    <div>SearchPage</div>
+    <div>
+      <Caplist/>
+      <Footer/>
+    </div>
   )
 }
+
 
 export default SearchPage;

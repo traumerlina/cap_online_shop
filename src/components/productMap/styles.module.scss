@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.ToHome {
+    position: absolute;
+    width: 190px;
+    height: 18px;
+    left: 11.7%;
+    top: 162px;
+    display: flex;
+
+.iconn {
+    font-size: 11px;
+    color:  #555252;
+    margin: 5px;
+    margin-top: 3.3%;   
+ }
+
+.cat {
+    color: #FDDB16;
+    white-space: nowrap;
+ }
+}  
+
+.frameone {
+    box-sizing: border-box;
+    position: absolute;
+    width: 570px;
+    height: 441px;
+    left: 180px;
+    top: 210px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px; 
+}
+
+.picone {
+    position: absolute;
+    left: 215px;
+    top: 263px;   
+}
+
+.frametwo {
+    box-sizing: border-box;
+    position: absolute;
+    width: 170px;
+    height: 131px;
+    left: 180px;
+    top: 676px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+}
+
+.framethree {
+    box-sizing: border-box;
+    position: absolute;
+    width: 170px;
+    height: 131px;
+    left: 380px;
+    top: 676px;
+    background: #FFFDFD;
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+}
+
+.framefour {
+    box-sizing: border-box;
+    position: absolute;
+    width: 170px;
+    height: 131px;
+    left: 580px;
+    top: 676px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+}
+
+.pictwo {
+    position: absolute;
+    width: 127px;
+    height: 103px;
+    left: 200px;
+    top: 695px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+}
+
+.picthree {
+    position: absolute;
+    width: 126px;
+    height: 101px;
+    left: 400px;
+    top: 695px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+}
+
+.picfour {
+    position: absolute;
+    width: 128px;
+    height: 103px;
+    left: 600px;
+    top: 695px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+}
+
+.main {
+    position: absolute;
+    width: 223px;
+    height: 48px;
+    left: 1088px;
+    top: 205px;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #000000;
+}
+
+.text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.94px; 
+    white-space: nowrap;
+    color: #000000; 
+}
+
+.frame1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 70px;
+    height: 48px;
+    left: 785px;
+    top: 312px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.frame2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 70px;
+    height: 48px;
+    left: 885px;
+    top: 312px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.frame3 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 70px;
+    height: 48px;
+    left: 985px;
+    top: 312px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.frame4 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 70px;
+    height: 48px;
+    left: 1085px;
+    top: 312px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.frame5 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 119px;
+    height: 48px;
+    left: 785px;
+    top: 420px;
+    background: #FFFFFF;
+    border: 1px solid #847E7E;
+    border-radius: 10px;
+}
+
+.text1 {
+    position: absolute;
+    width: 15px;
+    height: 29px;
+    left: 813px;
+    top: 322px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #847E7E;
+}
+
+.text2 {
+    position: absolute;
+    width: 23px;
+    height: 29px;
+    left: 909px;
+    top: 322px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #847E7E;
+}
+
+.text3 {
+    position: absolute;
+    width: 15px;
+    height: 29px;
+    left: 1010px;
+    top: 322px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.text4 {
+    position: absolute;
+    width: 30px;
+    height: 29px;
+    left: 1105px;
+    top: 322px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #847E7E;
+}
+
+.text5 {
+    background-color:#ffffff;
+    position: absolute;
+    width: 10px;
+    height: 29px;
+    left: 805px;
+    top: 428px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.text6 {
+    position: absolute;
+    width: 15.3px;
+    height: 29px;
+    left: 840px;
+    top: 430px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.text7 {
+    position: absolute;
+    background-color:#ffffff;
+    width: 14px;
+    height: 29px;
+    left: 870px;
+    top: 430px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.text8 {
+    position: absolute;
+    width: 163px;
+    height: 44px;
+    left: 1190px;
+    top: 655px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FDDB16;
+}
+
+.text9 
+{
+    left: 1080px;
+    top: 737px;
+    background: #FDDB16;
+    border-radius: 15px;
+    position: absolute;
+    width: 270px;
+    height: 70px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.sizes
+{
+    position:absolute;
+    left:680px;
+    top:50px;
+    width:300px;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+
+    &_block
+    {
+        position:relative;
+        width:70px;
+        padding: 0 5px;
+        background-color:#fff;
+        border: 1px solid #C4C4C4;
+        border-radius: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        margin-right:15px;
+        height: auto;
+    }
+}
+
+.selected
+{
+    border-color:#000;
+}
+
+
