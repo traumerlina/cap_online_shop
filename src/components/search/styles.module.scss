@@ -1,0 +1,40 @@
+.search-bar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  
+    form {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+      
+    }
+    
+  
+    input {
+      font-size: 18px;
+      width: 100%;
+      padding: 5px 5px 5px 10px;
+      height: 38px;
+      outline: none;
+      
+    }
+  }
+  button {
+    cursor: pointer;
+    margin-top: -260px;
+    opacity: 0;
+    background-color: none;
+    width: 200px;
+    margin-right: -150px;
+  }
+.cap_list{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 90%;
+}
